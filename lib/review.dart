@@ -5,8 +5,9 @@ class Review extends StatelessWidget {
   String name = "Varuna Yasas";
   String details = "1 review 5 photos";
   String comment = "There is an amazing place in Sri Lanka";
+  var stars;
 
-  Review(this.pathImage, this.name, this. details, this.comment);
+  Review(this.pathImage, this.name, this. details, this.comment, this.stars);
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +18,7 @@ class Review extends StatelessWidget {
           left: 20.0
       ),
       child: Text(
-        details,
+        comment,
         textAlign: TextAlign.left,
         style: TextStyle(
             fontFamily: "Lato",
@@ -27,19 +28,29 @@ class Review extends StatelessWidget {
       ),
     );
 
-    final userInfo = Container(
-      margin: EdgeInsets.only(
-          left: 20.0
-      ),
-      child: Text(
-        details,
-        textAlign: TextAlign.left,
-        style: TextStyle(
-            fontFamily: "Lato",
-            fontSize: 13.0,
-          color: Color(0xFFa3a5a7)
+    final userInfo = Row(
+      children: <Widget>[
+        Container(
+          margin: EdgeInsets.only(
+              left: 20.0
+          ),
+          child: Text(
+            details,
+            textAlign: TextAlign.left,
+            style: TextStyle(
+                fontFamily: "Lato",
+                fontSize: 13.0,
+                color: Color(0xFFa3a5a7)
+            ),
+          ),
+
+
         ),
-      ),
+
+        Row(
+          children: stars
+        )
+      ],
     );
 
     final userName = Container(

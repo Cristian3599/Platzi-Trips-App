@@ -91,7 +91,13 @@ flutter:
   # see https://flutter.dev/custom-fonts/#from-packages
 
   assets:
-    - assets/img/travel.jfif
+    - assets/img/travel.jpg
+    - assets/img/aquaman.jpg
+    - assets/img/superman.jpg
+    - assets/img/lago.jpg
+    - assets/img/arboles.jpg
+    - assets/img/montañas.jpg
+    - assets/img/bote.jpg
 
   fonts:
     - family: Lato
