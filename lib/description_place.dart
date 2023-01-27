@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:platzi_trips_app/review.dart';
 import 'package:platzi_trips_app/review_list.dart';
+import 'button_purple.dart';
 
 class DescriptionPlace extends StatelessWidget {
   String namePlace;
@@ -101,9 +102,11 @@ class DescriptionPlace extends StatelessWidget {
 
 
     final columns = Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         title_stars,
-        description
+        description,
+        ButtonPurple("Navigate")
       ],
     );
 

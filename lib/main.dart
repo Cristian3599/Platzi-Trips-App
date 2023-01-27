@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'description_place.dart';
-import 'gradient_back.dart';
-import 'review_list.dart';
-import 'header_appbar.dart';
+import 'platzi_trips.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,14 +7,6 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-  final String descriptionDummy = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
-      "Aenean commodo ligula eget dolor. Aenean massa."
-      "Cum sociis natoque penatibus et magnis dis parturient montes,"
-      "nascetur ridiculus mus. Donec felis, ultricies nec,"
-      "pellentesque eu, \n\n"
-      "Pretium quis, sem. Nulla consequant massa quis enim."
-      "Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu."
-      "In enim justo, rhoncus ut, imperdiet a.";
 
   // This widget is the root of your application.
   @override
@@ -36,20 +25,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: Scaffold(
-        body: Stack(
-          children: [
-            ListView(
-              children: <Widget>[
-                new DescriptionPlace("Duwili Ella", 4, descriptionDummy),
-                new ReviewList()
-              ],
-            ),
-            HeaderAppBar()
-          ],
-        ),
-        //body: new DescriptionPlace("Duwili Ella", 4, descriptionDummy),
-      )//const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: PlatziTrips()//const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
