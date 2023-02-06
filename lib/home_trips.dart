@@ -24,7 +24,7 @@ class HomeTrips extends StatelessWidget {
             new ReviewList()
           ],
         ),
-        HeaderAppBar()
+        HeaderAppBar("Popular")
       ],
     );
   }
