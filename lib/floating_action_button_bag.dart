@@ -25,16 +25,22 @@ class _FloatingActionButtonBag extends State<FloatingActionButtonBag> {
   Widget build(BuildContext context) {
     // TODO: implement build
 
-    return FloatingActionButton(
-      backgroundColor: Color(0xFF11DA53),
-      mini: true,
-      tooltip: "Save",
-      onPressed: null,
-      child: Icon(
-          Icons.shopping_bag_rounded
+    return Container(
+      margin: EdgeInsets.only(
+        left: 12.0
       ),
+      child: FloatingActionButton(
+        backgroundColor: Colors.white70,
+        mini: true,
+        tooltip: "Save",
+        onPressed: null,
+        child: Icon(
+            Icons.shopping_bag_rounded,
+            color: Colors.purple,
+        ),
 
 
+      ),
     );
   }
 

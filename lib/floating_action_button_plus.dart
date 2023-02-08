@@ -25,13 +25,20 @@ class _FloatingActionButtonPlus extends State<FloatingActionButtonPlus> {
   Widget build(BuildContext context) {
     // TODO: implement build
 
-    return FloatingActionButton(
-      backgroundColor: Color(0xFF11DA53),
-      mini: true,
-      tooltip: "Add",
-      onPressed: onPressedAdd,
-      child: Icon(
-          Icons.add
+    return Container(
+      margin: EdgeInsets.only(
+        left: 12.0
+      ),
+      child: FloatingActionButton(
+        backgroundColor: Colors.white,//Color(0xFF11DA53),
+        mini: false,
+        tooltip: "Add",
+        onPressed: onPressedAdd,
+        child: Icon(
+            Icons.add,
+            color: Colors.purple,
+            size: 35.0,
+        ),
       ),
     );
   }

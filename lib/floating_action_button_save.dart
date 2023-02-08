@@ -12,7 +12,7 @@ class FloatingActionButtonSave extends StatefulWidget {
 class _FloatingActionButtonSave extends State<FloatingActionButtonSave> {
   bool liked = false;
 
-  void onPressedAdd() {
+  void onPressedSave() {
     String text = "Guardando...";
     ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
@@ -25,13 +25,19 @@ class _FloatingActionButtonSave extends State<FloatingActionButtonSave> {
   Widget build(BuildContext context) {
     // TODO: implement build
 
-    return FloatingActionButton(
-      backgroundColor: Color(0xFF11DA53),
-      mini: true,
-      tooltip: "Save",
-      onPressed: onPressedAdd,
-      child: Icon(
-          Icons.save
+    return Container(
+      margin: EdgeInsets.only(
+        left: 12.0
+      ),
+      child: FloatingActionButton(
+        backgroundColor: Colors.white,
+        mini: true,
+        tooltip: "Save",
+        onPressed: onPressedSave,
+        child: Icon(
+            Icons.save,
+            color: Colors.purple,
+        ),
       ),
     );
   }

@@ -35,7 +35,7 @@ class UserInfo extends StatelessWidget {
 
     final userName = Container(
       margin: EdgeInsets.only(
-          top: 130.0,
+          top: 140.0,
           left: 20.0
       ),
       child: Text(
@@ -57,7 +57,7 @@ class UserInfo extends StatelessWidget {
 
     final photo = Container(
       margin: EdgeInsets.only(
-        top: 50.0,
+        top: 1.0,
         left: 20.0,
       ),
 

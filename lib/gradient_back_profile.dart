@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'user_info.dart';
+import 'floating_action_button_list.dart';
 
 class GradientBackProfile extends StatelessWidget {
   String title = "Popular";
@@ -11,7 +12,7 @@ class GradientBackProfile extends StatelessWidget {
     // TODO: implement build
 
     return Container(
-      height: 250.0,
+      height: 350.0,
       decoration: BoxDecoration(
           gradient: LinearGradient(
               colors: [
@@ -43,7 +44,8 @@ class GradientBackProfile extends StatelessWidget {
               ),
             ),
           ),
-          UserInfo("assets/img/pathum_tzoo.jpg", "Pathum Tzoo", "pathumtzoo1@gmail.com")
+          UserInfo("assets/img/pathum_tzoo.jpg", "Pathum Tzoo", "pathumtzoo1@gmail.com"),
+          FloatingActionButtonList()
         ],
       ),
 
