@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'header_app_bar_profile.dart';
+import 'card_image_profile_list.dart';
 
 class ProfileTrips extends StatelessWidget {
   @override
@@ -13,7 +14,8 @@ class ProfileTrips extends StatelessWidget {
             //new ReviewList()
           ],
         ),
-        HeaderAppBarProfile("Profile")
+        HeaderAppBarProfile("Profile"),
+        CardImageProfileList()
       ],
     );
   }

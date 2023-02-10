@@ -99,6 +99,9 @@ flutter:
     - assets/img/montañas.jpg
     - assets/img/bote.jpg
     - assets/img/pathum_tzoo.jpg
+    - assets/img/mountain1.jpg
+    - assets/img/mountain2.jpg
+    - assets/img/mountain3.jpg
 
   fonts:
     - family: Lato
